@@ -43,8 +43,17 @@ namespace Snake_N_Ladder
 
                 if (Pl1_position < 0)
                 { Pl1_position = 0; }
+                
+                if (Pl1_position > 100)
+                { Pl1_position = 100; }
+
 
                 Console.WriteLine("The position for Player 1 is : " + Pl1_position);
+            }
+
+            if (Pl1_position == 100)
+            {
+                Console.WriteLine("The Player 1 Has Won");
             }
 
 
