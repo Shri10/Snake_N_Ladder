@@ -18,29 +18,34 @@ namespace Snake_N_Ladder
             int Pl1_numberOfRolls = 0; // number of times the dice was rolled
             Random random = new Random();
 
-            int Pl1_diceRoll = random.Next(1, 7);
-            Pl1_numberOfRolls++;
+            while (Pl1_position < 100)
+            { 
+                int Pl1_diceRoll = random.Next(1, 7);
+                Pl1_numberOfRolls++;
 
-            Console.WriteLine("Dice for Player 1 Rolled: " + Pl1_diceRoll);
+                Console.WriteLine("Dice for Player 1 Rolled: " + Pl1_diceRoll);
 
-            int Pl1_option = random.Next(0, 3);
-            switch (Pl1_option)
-            {
-                case 0: // No Play
-                    Console.WriteLine("No Play");
-                    break;
-                case 1: // Ladder
-                    Pl1_position += Pl1_diceRoll;
-                    Console.WriteLine("Ladder!");
-                    break;
-                case 2: // Snake
-                    Pl1_position -= Pl1_diceRoll;
-                    Console.WriteLine("Snake!!");
-                    break;
+                int Pl1_option = random.Next(0, 3);
+                switch (Pl1_option)
+                {
+                    case 0: // No Play
+                        Console.WriteLine("No Play");
+                        break;
+                    case 1: // Ladder
+                        Pl1_position += Pl1_diceRoll;
+                        Console.WriteLine("Ladder!");
+                        break;
+                    case 2: // Snake
+                        Pl1_position -= Pl1_diceRoll;
+                        Console.WriteLine("Snake!!");
+                        break;
+                }
+
+                if (Pl1_position < 0)
+                { Pl1_position = 0; }
+
+                Console.WriteLine("The position for Player 1 is : " + Pl1_position);
             }
-
-            Console.WriteLine("The position for Player 1 is : " + Pl1_position);
-
 
 
 
