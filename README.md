@@ -9,7 +9,6 @@
 ┴ ┴┴ ┴─┴┘└─┘  └─┘ ┴   ╚═╝╩ ╩╩╚═╩╩╚═╩ ╩╚╝
 ```
 
-
 # Snake and Ladder Game Simulator
 
 This repository contains a simple simulation of the classic game Snake and Ladder.
