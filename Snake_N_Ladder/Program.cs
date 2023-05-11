@@ -53,7 +53,7 @@ namespace Snake_N_Ladder
 
             if (Pl1_position == 100)
             {
-                Console.WriteLine("The Player 1 Has Won");
+                Console.WriteLine("The Player 1 Has Won, after total "+ Pl1_numberOfRolls + " rolls");
             }
 
 
