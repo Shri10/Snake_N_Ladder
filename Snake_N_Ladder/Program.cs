@@ -23,6 +23,26 @@ namespace Snake_N_Ladder
 
             Console.WriteLine("Dice for Player 1 Rolled: " + Pl1_diceRoll);
 
+            int Pl1_option = random.Next(0, 3);
+            switch (Pl1_option)
+            {
+                case 0: // No Play
+                    Console.WriteLine("No Play");
+                    break;
+                case 1: // Ladder
+                    Pl1_position += Pl1_diceRoll;
+                    Console.WriteLine("Ladder!");
+                    break;
+                case 2: // Snake
+                    Pl1_position -= Pl1_diceRoll;
+                    Console.WriteLine("Snake!!");
+                    break;
+            }
+
+            Console.WriteLine("The position for Player 1 is : " + Pl1_position);
+
+
+
 
         }
     }
