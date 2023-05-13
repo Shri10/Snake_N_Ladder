@@ -21,5 +21,3 @@ This repository contains a simple simulation of the classic game Snake and Ladde
 - Repeats the game till the player reaches the winning position, 100
 - Ensures the player gets to exact winning position 100
 - Reports the number of times the dice was played to win the game and the position after every die role
-- Plays the game with 2 players. If a player gets a ladder, they play again. It also reports which player won the game
-
